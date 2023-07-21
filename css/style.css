@@ -1,0 +1,86 @@
+:root {
+    --main-font: 'PT Sans Caption', sans-serif;
+}
+
+section {
+    background-color: rgb(247, 236, 222);
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 65%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(254, 194, 96);
+    z-index: -1;
+    transition: top 0.5s;
+}
+
+h1 {
+    z-index: 1;
+    font-family: 'Pacifico', 'cursive';
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.title:hover h1::before {
+    top: 35%;
+}
+
+.hr {
+    border-top: black dotted 2px !important;
+}
+
+h2 {
+    background: -webkit-linear-gradient(left, #3fa55c, #b3ac4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Righteous', 'cursive';
+    font-size: 25px;
+}
+
+.icon-1 {
+    color: #3fa55c;
+}
+
+.icon-2 {
+    color: #b3ac4a;
+}
+
+.form-control:focus {
+    border-color: rgb(254, 194, 96);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(254, 194, 96);
+}
+
+.btn-submit {
+    background-color: #d1512d;
+    font-family: var(--main-font);
+}
+
+.btn-submit:hover {
+    background-color: rgb(187, 65, 32);
+}
+label{
+    font-family: var(--main-font);
+    color: rgb(33, 37, 41);
+    font-weight: 600;
+}
+.btn-visit{
+    background-color: #9eb23b;
+}
+.btn-visit:hover{
+    background-color: #8a9e23;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+th{
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+td{
+    font-family: var(--main-font);
+}

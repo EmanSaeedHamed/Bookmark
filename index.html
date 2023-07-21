@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="fonts/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <section>
+        <div class="container py-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="title">
+                    <h1 class="position-relative">Bookmarker</h1>
+                 </div>
+            </div>
+           <div class="hr w-100 border-top mt-5">
+           </div>
+           <h2 class="mt-3 text-center"><i class="fa-solid fa-bookmark icon-1"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark icon-2"></i></h2>
+           <label class="mb-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+           <input class="form-control mx-1" type="text" placeholder="Bookmark Name" id="bookName" oninput="validateName()">
+           <p id="valid-name"></p>
+           <label class="mb-2 mt-4"><i class="fa-solid fa-link"></i> Site URL</label>
+           <input class="form-control mx-1" type="url" placeholder="Website URL" id="website" oninput="validateWebsite()">
+           <p id="valid-website"></p>
+           <div class="d-flex justify-content-center">
+              <button class="btn px-5 btn-submit mt-4 text-white" onclick="addBook()">submit</button>
+           </div>
+           <div class="hr w-100 border-top mt-4">
+        </div>
+        <table class="table text-center mt-4">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableItem">
+                
+            </tbody>
+        </table>
+    
+        </div>
+       </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="fonts/js/all.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

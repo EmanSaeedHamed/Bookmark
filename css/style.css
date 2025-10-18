@@ -1,0 +1,139 @@
+:root{
+    --main-font: "Pacifico", cursive;;
+    --second-font: "Righteous", sans-serif;
+    --third-font: "PT Sans Caption", sans-serif;
+    --forth-font: "Bree Serif", serif;
+    --body-color: #212529;
+}
+.book-mark{
+    background-color: #f7ecde;
+}
+/** start of heading */
+h1{
+    color: #352e28;
+    font-family: var(--main-font);
+    font-size: 3.125rem;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 32%;
+    bottom: .125rem;
+    left: 0;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0.4s;
+}
+h1:hover::after{
+    height: 65%;
+}
+/** end of heading */
+
+/** start of form */
+h2 span{
+    font-size: 1.0625rem;
+    font-family: var(--second-font);
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mark-1{
+    color: #3FA55C;
+}
+.mark-2{
+    color: #B2AC49;
+}
+.book-form{
+    border-top: dotted .125rem #352e28;
+    border-bottom: dotted .125rem #352e28;
+    
+}
+label{
+    font-family: var(--third-font);
+    color: var(--body-color);
+}
+input::placeholder{
+    font-family: var(--third-font);
+}
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.sub-btn{
+    background-color: #d1512d;
+    font-family: var(--third-font);
+}
+form .btn:hover{
+    background-color: #bb4120;
+}
+/** end of form */
+
+/** start of table */
+table{
+    font-family: var(--third-font);
+    font-size: .75rem;
+}
+table.table{
+    --bs-bg-opacity: 1;
+    --bs-table-bg: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+}
+.table>:not(caption)>*>*{
+    color: var(--body-color);
+}
+.visit-btn{
+    background-color: #9eb23b;
+}
+table .btn.visit-btn:hover{
+    background-color: #8a9e23;
+}
+.delete-btn{
+    background-color: #eb1d36;
+}
+table .btn.delete-btn:hover{
+    background-color: #d30820;
+}
+table .btn{
+    font-size: .75rem;
+}
+/** end of table */
+
+
+.layer{
+    background-color: rgba(0,0,0,0.5);
+}
+.card{
+    width: 80%;
+    top: 15.625rem;
+}
+.circles span:nth-child(1){
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2){
+    background-color: #febe2e;
+}
+.circles span:nth-child(3){
+    background-color: #4db748;
+}
+.circles span{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.card p{
+    font-size: 1.3125rem;
+    line-height: 1.3;
+    color: #352e28;
+    font-family: var(--forth-font);
+}
+.card li i{
+    color: #bb4120;
+}
+.card li span{
+    font-size: 1.125rem;
+    font-family: var(--third-font);
+}

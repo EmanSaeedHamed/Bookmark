@@ -1,0 +1,20 @@
+@media screen and (min-width : 576px) {
+h2 span{
+    font-size: 1.5625rem;
+}
+table{
+    font-size: 1rem;
+}
+table .btn{
+    font-size: 1rem;
+}
+.card{
+    width: 60%;
+}
+}
+
+@media screen and (min-width : 768px) {
+.card{
+    width: 40%;
+}
+}

@@ -5,7 +5,7 @@
     --forth-font: "Bree Serif", serif;
     --body-color: #212529;
 }
-.book-mark{
+body{
     background-color: #f7ecde;
 }
 /** start of heading */
@@ -105,6 +105,10 @@ table .btn{
 
 .layer{
     background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .card{
     width: 80%;
@@ -125,7 +129,7 @@ table .btn{
     height: 20px;
 }
 .card p{
-    font-size: 1.3125rem;
+    font-size: 1rem;
     line-height: 1.3;
     color: #352e28;
     font-family: var(--forth-font);
@@ -134,6 +138,9 @@ table .btn{
     color: #bb4120;
 }
 .card li span{
-    font-size: 1.125rem;
+    font-size: .875rem;
     font-family: var(--third-font);
+}
+#xButton i{
+    color: var(--body-color);
 }

@@ -11,7 +11,15 @@ table .btn{
 .card{
     width: 60%;
 }
+.card p{
+    font-size: 1.3125rem;
 }
+.card li span{
+    font-size: 1.125rem;
+}
+}
+
+
 
 @media screen and (min-width : 768px) {
 .card{
